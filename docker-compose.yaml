@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  api:
+    build:
+      context: .
+    image: one2q/skypro_flask
+    ports:
+      - 80:80
