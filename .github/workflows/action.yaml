@@ -1,0 +1,11 @@
+name: flask_avito workflow
+on: [push]
+jobs:
+  build_and_push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: clone code
+      - uses: actions/checkout@v2
+      - name: docker build
+      - run: docker build -t one2q/skypro_flask:$GITHUB_REF_NAME-$GITHUB_RUN_ID .
+
