@@ -12,4 +12,3 @@ jobs:
         run: echo ${{ secrets.DOCKER_TOKEN }} | docker login -u ${{ secrets.DOKER_USERNAME }} --password-stdin
       - name: docker push
         run: docker push one2q/skypro_flask:$GITHUB_REF_NAME-$GITHUB_RUN_ID
-  deploy:
