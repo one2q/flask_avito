@@ -2,6 +2,6 @@ version: "3.9"
 
 services:
   api:
-    image: one2q/skypro_flaskz:$GITHUB_REF_NAME-$GITHUB_RUN_ID
+    image: one2q/skypro_flask:$GITHUB_REF_NAME-$GITHUB_RUN_ID
     ports:
       - 80:80
